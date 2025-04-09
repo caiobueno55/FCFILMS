@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Faz com que a página seja responsiva em diferentes dispositivos -->
-  <title>Interestelar - FC FILMS</title> <!-- Título da página que aparece na aba do navegador -->
-  <link rel="stylesheet" href="style.css" /> <!-- Importa o CSS principal compartilhado -->
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta charset="UTF-8" />
 
-  <!-- Estilo específico de fundo e texto para esta página -->
+  <!-- Define a visualização para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da aba do navegador -->
+  <title>Vingadores - FC FILMS</title>
+
+  <!-- Link para o arquivo CSS principal do site -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Estilo inline para definir a imagem de fundo da página -->
   <style>
     body {
-      background-image: url('interestelar.JPEG'); /* Define a imagem de fundo da página */
-      background-size: cover; /* A imagem cobre toda a tela */
-      background-position: center; /* Centraliza a imagem no fundo */
-      background-repeat: no-repeat; /* Evita repetição da imagem */
-    }
+      /* Imagem de fundo da página */
+      background-image: url('https://s2-g1.glbimg.com/P4qEajW8fHy9w6rmF29EPQxhwhU=/0x45:1400x1000/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/E/E/lR2QJpRoGwKewinYXWvA/vingadors.jpg');
 
-    /* Estiliza os textos do título e parágrafos do artigo */
-    .detalhes-filme h2,
-    .detalhes-filme p {
-      color: #000; /* Texto preto */
-      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Sombra clara para dar contraste sobre o fundo */
+      /* Ajusta a imagem para cobrir toda a tela */
+      background-size: cover;
+
+      /* Centraliza a imagem */
+      background-position: center;
+
+      /* Não repete a imagem */
+      background-repeat: no-repeat;
     }
   </style>
 </head>
 <body>
 
-  <!-- Cabeçalho do site com nome/logo e link para a página principal -->
+  <!-- Cabeçalho do site com logo e link para a página inicial -->
   <header class="barra-topo">
     <nav>
       <h1>
@@ -39,41 +46,46 @@
 
   <!-- Conteúdo principal da página -->
   <main class="conteudo">
+    <!-- Informações detalhadas sobre o filme -->
+    <article class="detalhes-filme" aria-labelledby="titulo-filme">
+      <!-- Título do filme -->
+      <h2 id="titulo-filme">Vingadores: Ultimato</h2>
 
-    <!-- Informações sobre o filme Interestelar -->
-    <article class="detalhes-filme">
-      <h2>Interestelar: Ultimato</h2> <!-- Título do filme -->
-      <p><strong>2014 • 2h 49m • HD</strong></p> <!-- Informações sobre o ano, duração e qualidade -->
-      <p><span class="classificacao" aria-label="Classificação indicativa: 10 anos">10</span> Drama, Aventura e Ficção científica</p> <!-- Gênero e classificação -->
-      <p>Em um futuro sombrio, uma equipe de astronautas viaja por um buraco de minhoca em busca de um novo lar para a humanidade.</p> <!-- Sinopse -->
+      <!-- Informações adicionais: ano, duração e qualidade -->
+      <p><strong>2019 • 3h 1m • HD</strong></p>
+
+      <!-- Classificação e gêneros -->
+      <p><span class="classificacao">12</span> Ação, Aventura, Fantasia e Ficção científica</p>
+
+      <!-- Sinopse do filme -->
+      <p>Após os eventos de "Guerra Infinita", os Vingadores restantes tentam reverter os danos causados por Thanos.</p>
 
 		<br>
 		<br>
 
-      <!-- Botões de ação -->
+      <!-- Botões: assistir e adicionar à lista -->
       <div class="botoes">
-        <!-- Link para o trailer no YouTube -->
-        <a href="https://www.youtube.com/embed/zSWdZVtXT7E" class="botao-assistir" role="button">Assistir</a>
-        <!-- Botão para voltar à lista de filmes -->
-        <a href="FILMS.html" class="botao-lista" role="button" aria-label="Adicionar à lista">+</a>
+        <!-- Link para o trailer no YouTube (nova aba) -->
+        <a href="https://www.youtube.com/embed/spJoZReeIeQ" class="botao-assistir" target="_blank" rel="noopener noreferrer">Assistir</a>
+
+        <!-- Link para retornar ou adicionar à lista -->
+        <a href="FILMS.html" class="botao-lista" aria-label="Adicionar à lista">+</a>
       </div>
     </article>
 
-    <!-- Trailer incorporado do YouTube -->
-    <section class="video-container" aria-label="Trailer do filme Interestelar">
+    <!-- Trailer incorporado na página -->
+    <section class="video-container" aria-label="Trailer do filme Vingadores: Ultimato">
       <iframe 
-        src="https://www.youtube.com/embed/zSWdZVtXT7E" <!-- URL do trailer -->
-        frameborder="0" <!-- Sem borda no iframe -->
-        allowfullscreen <!-- Permite tela cheia -->
-        title="Trailer Interestelar" <!-- Título descritivo para acessibilidade -->
+        src="https://www.youtube.com/embed/spJoZReeIeQ"
+        frameborder="0"
+        allowfullscreen
+        title="Trailer Vingadores: Ultimato"
       ></iframe>
     </section>
   </main>
 
-  <!-- Rodapé do site com direitos autorais -->
-  <footer class="barra-rodape">
-
-  </footer>
+  <!-- Rodapé da página -->
+  <footer class="barra-rodape"></footer>
 
 </body>
 </html>
