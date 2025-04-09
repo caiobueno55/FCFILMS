@@ -1,77 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Define o idioma da página como Português do Brasil -->
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 (acentuação e símbolos especiais) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
-  <title>FC FILMS</title> <!-- Título da aba do navegador -->
-  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS externo -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vingadores - FC FILMS</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      background-image: url('https://s2-g1.glbimg.com/P4qEajW8fHy9w6rmF29EPQxhwhU=/0x45:1400x1000/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/E/E/lR2QJpRoGwKewinYXWvA/vingadors.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Cabeçalho do site com o nome/logo -->
+  <!-- Cabeçalho com logo -->
   <header class="barra-topo">
-    <h1>
-      <!-- Link para a página FILMS.html com o nome estilizado FC FILMS -->
-      <a href="FILMS.html" style="text-decoration: none;">
-        <span style="color: blue;">FC</span> 
-        <span style="color: #f2f5f7;">FILMS</span>
-      </a>
-    </h1>
+    <nav>
+      <h1>
+        <a href="FILMS.html" style="text-decoration: none;" aria-label="Página inicial FC FILMS">
+          <span style="color: blue;">FC</span> 
+          <span style="color: #f2f5f7;">FILMS</span>
+        </a>
+      </h1>
+    </nav>
   </header>
 
-  <!-- Conteúdo principal da página -->
-  <main>
+  <!-- Conteúdo principal -->
+  <main class="conteudo">
+    <article class="detalhes-filme" aria-labelledby="titulo-filme">
+      <h2 id="titulo-filme">Vingadores: Ultimato</h2>
+      <p><strong>2019 • 3h 1m • HD</strong></p>
+      <p><span class="classificacao">12</span> Ação, Aventura, Fantasia e Ficção científica</p>
+      <p>Após os eventos de "Guerra Infinita", os Vingadores restantes tentam reverter os danos causados por Thanos.</p>
 
-    <!-- Seção: TOP+ FILMES -->
-    <section aria-labelledby="top-filmes">
-      <h2 id="top-filmes">
-        <span style="font-family: Impact; color: blue; margin-left: 10%;">TOP+</span> 
-        <span style="color: #f2f5f7;">FILMES</span>
-      </h2>
-
-      <!-- Galeria de imagens de filmes em destaque -->
-      <div class="img2">
-        <!-- Algumas imagens levam à página de login com parâmetro de destino -->
-        <a href="login.html?destino=batman.html"><img src="batman.JPEG" alt="Batman" /></a>
-        <a href="vingadores.html"><img src="vingadores.JPEG" alt="Vingadores" /></a>
-        <a href="login.html?destino=homemaranha.html"><img src="homemaranha.JPEG" alt="Homem-Aranha" /></a>
-        <a href="login.html?destino=pantera.html"><img src="pantera.JPEG" alt="Pantera Negra" /></a>
-        <a href="login.html?destino=capitao.html"><img src="capitao.JPEG" alt="Capitão América" /></a>
+      <div class="botoes">
+        <a href="https://www.youtube.com/embed/spJoZReeIeQ" class="botao-assistir" target="_blank" rel="noopener noreferrer">Assistir</a>
+        <a href="FILMS.html" class="botao-lista" aria-label="Adicionar à lista">+</a>
       </div>
-    </section>
+    </article>
 
-    <!-- Seção: Filmes -->
-    <section aria-labelledby="filmes">
-      <h2 id="filmes" style="color: #f2f5f7; margin-left: 10%;">FILMES</h2>
-
-      <!-- Galeria com outros filmes -->
-      <div class="img2">
-        <a href="interestelar.html"><img src="interestelar.JPEG" alt="Interestelar" /></a>
-        <a href="login.html?destino=perdidoemmarte.html"><img src="perdidoemmarte.JPEG" alt="Perdido em Marte" /></a>
-        <a href="login.html?destino=sniperamericano.html"><img src="sniperamericano.JPEG" alt="Sniper Americano" /></a>
-        <a href="login.html?destino=milagrenacela7.html"><img src="milagrenacela7.JPEG" alt="Milagre na Cela 7" /></a>
-        <a href="login.html?destino=resgate2.html"><img src="resgate2.JPEG" alt="Resgate 2" /></a>
-      </div>
-    </section>
-
-    <!-- Seção: Séries -->
-    <section aria-labelledby="series">
-      <h2 id="series" style="color: #f2f5f7; margin-left: 10%;">SÉRIES</h2>
-
-      <!-- Galeria de imagens de séries -->
-      <div class="img2">
-        <a href="lacasa.html"><img src="lacasa.JPEG" alt="La Casa de Papel" /></a>
-        <a href="login.html?destino=supernatural.html"><img src="supernatural.JPEG" alt="Supernatural" /></a>
-        <a href="login.html?destino=peaky.html"><img src="peaky.JPEG" alt="Peaky Blinders" /></a>
-        <a href="login.html?destino=prision.html"><img src="prision.JPEG" alt="Prison Break" /></a>
-        <a href="login.html?destino=99.html"><img src="99.JPEG" alt="Brooklyn Nine-Nine" /></a>
-      </div>
+    <!-- Trailer -->
+    <section class="video-container" aria-label="Trailer do filme Vingadores: Ultimato">
+      <iframe 
+        src="https://www.youtube.com/embed/spJoZReeIeQ"
+        frameborder="0"
+        allowfullscreen
+        title="Trailer Vingadores: Ultimato"
+      ></iframe>
     </section>
   </main>
 
-  <!-- Rodapé do site -->
-  <footer class="barra-rodape">
-  
-  </footer>
+  <!-- Rodapé -->
+  <footer class="barra-rodape"></footer>
+
 </body>
 </html>
